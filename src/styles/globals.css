@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    text-rendering: optimizeLegibility;
+    -webkit-overflow-scrolling: touch;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+}
